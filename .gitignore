@@ -1,0 +1,5 @@
+site/
+__pycache__/
+*.pyc
+.lycheecache/
+health-report.md
