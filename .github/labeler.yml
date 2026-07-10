@@ -1,0 +1,46 @@
+formatters:
+  - changed-files:
+      - any-glob-to-any-file: 'README.md'
+        any-glob-to-any-file-regex: ['(?i).*formatter.*|.*report.*']
+    labels: [formatters]
+
+tooling:
+  - changed-files:
+      - any-glob-to-any-file: 'README.md'
+        any-glob-to-any-file-regex: ['(?i).*behave-format.*|.*behave-lint.*|.*behave-model.*']
+    labels: [tooling]
+
+integrations:
+  - changed-files:
+      - any-glob-to-any-file: 'README.md'
+        any-glob-to-any-file-regex: ['(?i).*selenium.*|.*playwright.*|.*appium.*|.*django.*|.*flask.*|.*api.*|.*rest.*']
+    labels: [integrations]
+
+ci-cd:
+  - changed-files:
+      - any-glob-to-any-file: 'README.md'
+        any-glob-to-any-file-regex: ['(?i).*ci.*|.*cd.*|.*pipeline.*|.*github-actions.*|.*gitlab.*|.*jenkins.*|.*teamcity.*|.*tox.*']
+    labels: [ci-cd]
+
+ide-editor:
+  - changed-files:
+      - any-glob-to-any-file: 'README.md'
+        any-glob-to-any-file-regex: ['(?i).*vscode.*|.*pycharm.*|.*vim.*|.*sublime.*|.*eclipse.*|.*gherkin.*editor.*']
+    labels: [ide-editor]
+
+learning:
+  - changed-files:
+      - any-glob-to-any-file: 'README.md'
+        any-glob-to-any-file-regex: ['(?i).*tutorial.*|.*course.*|.*book.*|.*video.*|.*guide.*']
+    labels: [learning-resources]
+
+community:
+  - changed-files:
+      - any-glob-to-any-file: 'README.md'
+        any-glob-to-any-file-regex: ['(?i).*example.*|.*sample.*|.*demo.*|.*template.*|.*cookiecutter.*']
+    labels: [community]
+
+infrastructure:
+  - changed-files:
+      - any-glob-to-any-file: ['.github/**/*', 'scripts/**/*']
+    labels: [infrastructure]
