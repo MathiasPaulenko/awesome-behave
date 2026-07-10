@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Behave Documentation
+    url: https://behave.readthedocs.io/
+    about: Questions about Behave usage — please refer to the official documentation.
+  - name: Behave GitHub Discussions
+    url: https://github.com/behave/behave/discussions
+    about: Questions and discussions about Behave itself — please use the official Behave repository.
