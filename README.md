@@ -81,7 +81,7 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 ### Web Frameworks
 
 - [behave-django](https://github.com/behave/behave-django) - Official Django integration for Behave. Provides a `behave` management command and test runner integration.
-- [Flask Test Integration](https://behave.readthedocs.io/en/stable/flask/) - Official guide for integrating Behave with Flask applications.
+- [Flask Test Integration](https://behave.readthedocs.io/en/stable/usecase_flask/) - Official guide for integrating Behave with Flask applications.
 
 ### Browser Automation
 

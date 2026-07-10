@@ -114,7 +114,7 @@ Built-in reporters: `junit` (JUnit XML), `summary`.
 | Name | PyPI | GitHub | Description |
 |---|---|---|---|
 | behave-django | `behave-django` | https://github.com/behave/behave-django | Official Django integration for Behave |
-| Flask integration | — | https://behave.readthedocs.io/en/stable/flask/ | Official Flask test integration guide |
+| Flask integration | — | https://behave.readthedocs.io/en/stable/usecase_flask/ | Official Flask test integration guide |
 
 #### Browser Automation
 
