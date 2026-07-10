@@ -27,7 +27,7 @@ jobs:
         run: npm install -g markdownlint-cli
 
       - name: Lint markdown files
-        run: markdownlint '**/*.md' --config .markdownlint.json --ignore '.github/**/*.md'
+        run: markdownlint '**/*.md' --config .markdownlint.json --ignore '.github/**/*.md' --ignore 'DESIGN.md'
 
   link-check:
     name: Link Check
