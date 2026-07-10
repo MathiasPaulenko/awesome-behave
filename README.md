@@ -190,14 +190,6 @@ Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTIN
 
 ---
 
-## Star History
-
-<a href="https://star-history.com/#MathiasPaulenko/awesome-behave&Date" target="_blank" rel="noopener noreferrer">
-  <img src="https://star-history.com/embed.svg?repo=MathiasPaulenko/awesome-behave&Date" alt="Star History Chart" width="600">
-</a>
-
----
-
 <p align="center">
   <sub>Built with ❤️ by the <a href="https://github.com/MathiasPaulenko/awesome-behave/graphs/contributors">community</a>.</sub><br>
   <sub>Curated by <a href="https://github.com/MathiasPaulenko">@MathiasPaulenko</a>.</sub>

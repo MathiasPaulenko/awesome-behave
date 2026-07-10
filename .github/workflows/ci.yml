@@ -54,8 +54,6 @@ jobs:
             --exclude 'https://www.youtube.com/results'
             --exclude 'https://www.lambdatest.com/'
             --exclude 'https://www.udemy.com/'
-            --exclude 'https://star-history.com/'
-            --exclude 'https://behave.readthedocs.io/en/stable/flask/'
             '*.md'
           fail: true
 
