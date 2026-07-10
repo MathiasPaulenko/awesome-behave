@@ -187,10 +187,3 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 ## Contributing
 
 Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) before submitting a pull request.
-
----
-
-<p align="center">
-  <sub>Built with ❤️ by the <a href="https://github.com/MathiasPaulenko/awesome-behave/graphs/contributors">community</a>.</sub><br>
-  <sub>Curated by <a href="https://github.com/MathiasPaulenko">@MathiasPaulenko</a>.</sub>
-</p>
