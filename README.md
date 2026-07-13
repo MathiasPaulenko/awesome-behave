@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave)
-[![Resources](https://img.shields.io/badge/resources-66-blue)](https://github.com/MathiasPaulenko/awesome-behave)
+[![Resources](https://img.shields.io/badge/resources-67-blue)](https://github.com/MathiasPaulenko/awesome-behave)
 [![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave/graphs/contributors)
 [![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)](https://github.com/MathiasPaulenko/awesome-behave)
@@ -112,6 +112,7 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 - [behave-format](https://github.com/MathiasPaulenko/behave-format) - Opinionated formatter for Behave `.feature` files. Like Black, but for Gherkin.
 - [behave-lint](https://github.com/MathiasPaulenko/behave-lint) - Fast, opinionated, extensible linter for Gherkin `.feature` files and Behave test suites.
 - [behave-model](https://github.com/MathiasPaulenko/behave-model) - Canonical object model for Behave projects with Gherkin v6 Rules, Tag Expression v2, and full Behave 1.3.x compatibility.
+- [behave-tables](https://github.com/MathiasPaulenko/behave-tables) - Polished API for Behave Data Tables with `as_dicts()`, `as_models()`, `transpose()`, `to_csv()`, and `to_json()`. Zero dependencies, type-safe.
 
 ## CI/CD Integrations
 
