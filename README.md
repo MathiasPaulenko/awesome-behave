@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave)
-[![Resources](https://img.shields.io/badge/resources-68-blue)](https://github.com/MathiasPaulenko/awesome-behave)
+[![Resources](https://img.shields.io/badge/resources-69-blue)](https://github.com/MathiasPaulenko/awesome-behave)
 [![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave/graphs/contributors)
 [![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)](https://github.com/MathiasPaulenko/awesome-behave)
@@ -112,13 +112,14 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 - [behave-format](https://github.com/MathiasPaulenko/behave-format) - Opinionated formatter for Behave `.feature` files. Like Black, but for Gherkin.
 - [behave-lint](https://github.com/MathiasPaulenko/behave-lint) - Fast, opinionated, extensible linter for Gherkin `.feature` files and Behave test suites.
 - [behave-model](https://github.com/MathiasPaulenko/behave-model) - Canonical object model for Behave projects with Gherkin v6 Rules, Tag Expression v2, and full Behave 1.3.x compatibility.
+- [behave-priority](https://github.com/MathiasPaulenko/behave-priority) - Priority-based execution for Behave. Run critical scenarios first with `@priority(N)` tags, fail-fast controls, and smoke-first mode. Zero dependencies.
 - [behave-retry](https://github.com/MathiasPaulenko/behave-retry) - Automatic retry for failed Behave scenarios with CLI flags, tag overrides, exception filtering, and flakiness stats. Zero dependencies.
 - [behave-tables](https://github.com/MathiasPaulenko/behave-tables) - Polished API for Behave Data Tables with `as_dicts()`, `as_models()`, `transpose()`, `to_csv()`, and `to_json()`. Zero dependencies, type-safe.
 
 ## CI/CD Integrations
 
 - [Behave CI/CD Pipeline Guide](https://deepwiki.com/behave/behave/6.2-cicd-pipeline) - Comprehensive guide on integrating Behave into CI/CD pipelines (GitHub Actions, Tox, multi-environment testing).
-- [GitLab CI + Behave + Pytest](https://surestride.hashnode.dev/cicd-pipeline-for-python-with-bdd-and-tdd-using-behave-pytest-and-gitlab-ci) - Complete CI/CD pipeline tutorial using Behave, pytest, pre-commit hooks, and GitLab CI.
+- [GitLab CI + Behave + Pytest](https://surestride.hashnode.dev/cicd-pipeline-for-python-with-bdd-and-ttdd-using-behave-pytest-and-gitlab-ci) - Complete CI/CD pipeline tutorial using Behave, pytest, pre-commit hooks, and GitLab CI.
 - [JUnit XML Reporter](https://behave.readthedocs.io/en/stable/appendix.formatters/) - Built-in `junit` reporter for Jenkins and other CI systems that consume JUnit XML.
 - [ParallelBehaveAllureFlow](https://github.com/ggkiokas/ParallelBehaveAllureFlow) - Reusable GitHub Actions workflow for parallel Behave execution with Allure report generation and retry mechanism.
 - [Tox](https://tox.wiki) - Generic virtualenv management and test tool for running Behave across multiple Python environments in CI.
