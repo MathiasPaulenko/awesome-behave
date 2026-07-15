@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave)
-[![Resources](https://img.shields.io/badge/resources-69-blue)](https://github.com/MathiasPaulenko/awesome-behave)
+[![Resources](https://img.shields.io/badge/resources-70-blue)](https://github.com/MathiasPaulenko/awesome-behave)
 [![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave/graphs/contributors)
 [![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)](https://github.com/MathiasPaulenko/awesome-behave)
@@ -74,6 +74,7 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 - [behave-modern-html-report](https://github.com/MathiasPaulenko/behave-modern-html-report) - Modern interactive HTML report formatter with zero external dependencies.
 - [behave-modern-json-report](https://github.com/MathiasPaulenko/behave-modern-json-report) - Modern structured JSON report formatter with schema-versioned output and Cucumber JSON compatibility for CI/CD integrations.
 - [behave-modern-md-report](https://github.com/MathiasPaulenko/behave-modern-md-report) - Markdown report formatter that generates GitHub-friendly execution reports with summaries and statistics.
+- [behave-modern-sheets-report](https://github.com/MathiasPaulenko/behave-modern-sheets-report) - CSV and Excel (XLSX) report formatters for Behave. CSV with one row per scenario, Excel with multiple sheets (Summary, Details, Failures, Trends), conditional formatting, and auto-filters.
 - [behave-teamcity](https://github.com/iljabauer/behave-teamcity) - Formatter for reporting Behave test results to JetBrains TeamCity CI via service messages.
 
 ## Integrations
