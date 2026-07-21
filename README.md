@@ -112,8 +112,8 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 
 - [behave-comments](https://github.com/MathiasPaulenko/behave-comments) - Parser and extractor for comments and annotations in Behave `.feature` files. Extract structured metadata from `# @id REQ-001` style annotations, convert comments to tags, and generate documentation.
 - [behave-data](https://github.com/MathiasPaulenko/behave-data) - Random test data utilities for Behave. Faker integration in steps, data providers, dynamic Examples generation, Data Tables with generated data, reproducible seeds, locale support, and reusable templates.
-- [behave-kit](https://github.com/MathiasPaulenko/behave-kit) - Swiss army knife for Behave. Soft assertions, context dump on failure, conditional skip decorators, environment management, typed context, parameter types, tag-based fixtures, scoped cleanup, and environment variable helpers. Zero dependencies.
 - [behave-format](https://github.com/MathiasPaulenko/behave-format) - Opinionated formatter for Behave `.feature` files. Like Black, but for Gherkin.
+- [behave-kit](https://github.com/MathiasPaulenko/behave-kit) - Swiss army knife for Behave. Soft assertions, context dump on failure, conditional skip decorators, environment management, typed context, parameter types, tag-based fixtures, scoped cleanup, and environment variable helpers. Zero dependencies.
 - [behave-lint](https://github.com/MathiasPaulenko/behave-lint) - Fast, opinionated, extensible linter for Gherkin `.feature` files and Behave test suites.
 - [behave-model](https://github.com/MathiasPaulenko/behave-model) - Canonical object model for Behave projects with Gherkin v6 Rules, Tag Expression v2, and full Behave 1.3.x compatibility.
 - [behave-priority](https://github.com/MathiasPaulenko/behave-priority) - Priority-based execution for Behave. Run critical scenarios first with `@priority(N)` tags, fail-fast controls, and smoke-first mode. Zero dependencies.
@@ -173,7 +173,7 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 - [appium-python-bdd](https://github.com/serhatbolsu/appium-python-bdd) - BDD test examples with Appium and Behave for mobile testing.
 - [Applitools-With-Behave](https://github.com/umangbhatia786/Applitools-With-Behave) - Sample framework integrating Selenium, Behave, and Applitools for visual testing.
 - [behave-gui](https://github.com/behave-contrib/behave-gui) - GUI front-end for Behave test execution.
-- [behavedemo](https://github.com/andrewdjackson/behavedemo) - Demo project using pyHamcrest matchers, Requests, and Selenium with Behave.
+- [behavedemo](https://github.com/andrewdjackson/behavedemo) - Demo project using py Hamcrest matchers, Requests, and Selenium with Behave.
 - [cookiecutter-example](https://github.com/MathiasPaulenko/cookiecutter-example) - Cookiecutter template for generating Behave BDD test automation projects with Selenium, Allure, and configurable options.
 - [python-behave-examples](https://github.com/MathiasPaulenko/python-behave-examples) - Repository with practical examples of using the Behave library in Python.
 - [Python-Behave-sample-project](https://github.com/crki76/Python-Behave-sample-project) - Sample BDD automation project with Page Object Model pattern.
