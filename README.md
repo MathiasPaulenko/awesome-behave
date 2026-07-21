@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave)
-[![Resources](https://img.shields.io/badge/resources-72-blue)](https://github.com/MathiasPaulenko/awesome-behave)
+[![Resources](https://img.shields.io/badge/resources-73-blue)](https://github.com/MathiasPaulenko/awesome-behave)
 [![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave/graphs/contributors)
 [![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)](https://github.com/MathiasPaulenko/awesome-behave)
@@ -112,6 +112,7 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 
 - [behave-comments](https://github.com/MathiasPaulenko/behave-comments) - Parser and extractor for comments and annotations in Behave `.feature` files. Extract structured metadata from `# @id REQ-001` style annotations, convert comments to tags, and generate documentation.
 - [behave-data](https://github.com/MathiasPaulenko/behave-data) - Random test data utilities for Behave. Faker integration in steps, data providers, dynamic Examples generation, Data Tables with generated data, reproducible seeds, locale support, and reusable templates.
+- [behave-kit](https://github.com/MathiasPaulenko/behave-kit) - Swiss army knife for Behave. Soft assertions, context dump on failure, conditional skip decorators, environment management, typed context, parameter types, tag-based fixtures, scoped cleanup, and environment variable helpers. Zero dependencies.
 - [behave-format](https://github.com/MathiasPaulenko/behave-format) - Opinionated formatter for Behave `.feature` files. Like Black, but for Gherkin.
 - [behave-lint](https://github.com/MathiasPaulenko/behave-lint) - Fast, opinionated, extensible linter for Gherkin `.feature` files and Behave test suites.
 - [behave-model](https://github.com/MathiasPaulenko/behave-model) - Canonical object model for Behave projects with Gherkin v6 Rules, Tag Expression v2, and full Behave 1.3.x compatibility.
