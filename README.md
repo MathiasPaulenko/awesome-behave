@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave)
-[![Resources](https://img.shields.io/badge/resources-73-blue)](https://github.com/MathiasPaulenko/awesome-behave)
+[![Resources](https://img.shields.io/badge/resources-74-blue)](https://github.com/MathiasPaulenko/awesome-behave)
 [![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave/graphs/contributors)
 [![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)](https://github.com/MathiasPaulenko/awesome-behave)
@@ -71,6 +71,7 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 - [behave-html-formatter](https://github.com/behave-contrib/behave-html-formatter) - Simple HTML formatter for Behave test reports.
 - [behave-html-pretty-formatter](https://github.com/behave-contrib/behave-html-pretty-formatter) - Pretty HTML formatter inspired by jest-html-reporter. Supports embedded screenshots, pseudo steps, and configurable summaries.
 - [behave-modern-console-report](https://github.com/MathiasPaulenko/behave-modern-console-report) - Real-time console report formatter with colors, progress indicators, and execution summaries for local development and CI/CD.
+- [behave-modern-file-reports](https://github.com/MathiasPaulenko/behave-modern-file-reports) - PDF, DOCX, and TXT report formatters for Behave. Customizable templates, executive summaries, embedded screenshots, and failed-only filters for stakeholders.
 - [behave-modern-html-report](https://github.com/MathiasPaulenko/behave-modern-html-report) - Modern interactive HTML report formatter with zero external dependencies.
 - [behave-modern-json-report](https://github.com/MathiasPaulenko/behave-modern-json-report) - Modern structured JSON report formatter with schema-versioned output and Cucumber JSON compatibility for CI/CD integrations.
 - [behave-modern-md-report](https://github.com/MathiasPaulenko/behave-modern-md-report) - Markdown report formatter that generates GitHub-friendly execution reports with summaries and statistics.
