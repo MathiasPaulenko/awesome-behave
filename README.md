@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave)
-[![Resources](https://img.shields.io/badge/resources-74-blue)](https://github.com/MathiasPaulenko/awesome-behave)
+[![Resources](https://img.shields.io/badge/resources-75-blue)](https://github.com/MathiasPaulenko/awesome-behave)
 [![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave/graphs/contributors)
 [![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)](https://github.com/MathiasPaulenko/awesome-behave)
@@ -113,6 +113,7 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 
 - [behave-comments](https://github.com/MathiasPaulenko/behave-comments) - Parser and extractor for comments and annotations in Behave `.feature` files. Extract structured metadata from `# @id REQ-001` style annotations, convert comments to tags, and generate documentation.
 - [behave-data](https://github.com/MathiasPaulenko/behave-data) - Random test data utilities for Behave. Faker integration in steps, data providers, dynamic Examples generation, Data Tables with generated data, reproducible seeds, locale support, and reusable templates.
+- [behave-doctor](https://github.com/MathiasPaulenko/behave-doctor) - Static analysis and diagnostics for Behave suites. Detects unused steps/tags, duplicate steps, tag coverage, feature/scenario complexity, and dependency graphs. Zero dependencies.
 - [behave-format](https://github.com/MathiasPaulenko/behave-format) - Opinionated formatter for Behave `.feature` files. Like Black, but for Gherkin.
 - [behave-kit](https://github.com/MathiasPaulenko/behave-kit) - Swiss army knife for Behave. Soft assertions, context dump on failure, conditional skip decorators, environment management, typed context, parameter types, tag-based fixtures, scoped cleanup, and environment variable helpers. Zero dependencies.
 - [behave-lint](https://github.com/MathiasPaulenko/behave-lint) - Fast, opinionated, extensible linter for Gherkin `.feature` files and Behave test suites.
@@ -174,8 +175,8 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 - [appium-python-bdd](https://github.com/serhatbolsu/appium-python-bdd) - BDD test examples with Appium and Behave for mobile testing.
 - [Applitools-With-Behave](https://github.com/umangbhatia786/Applitools-With-Behave) - Sample framework integrating Selenium, Behave, and Applitools for visual testing.
 - [behave-gui](https://github.com/behave-contrib/behave-gui) - GUI front-end for Behave test execution.
-- [behavedemo](https://github.com/andrewdjackson/behavedemo) - Demo project using py Hamcrest matchers, Requests, and Selenium with Behave.
-- [cookiecutter-example](https://github.com/MathiasPaulenko/cookiecutter-example) - Cookiecutter template for generating Behave BDD test automation projects with Selenium, Allure, and configurable options.
+- [behavedemo](https://github.com/andrewdjackson/behavedemo) - Demo project using py Hamcrest matchers, Requests, and Selenim with Behave.
+- [cookiecutter-example](https://github.com/MathiasPaulenko/cookiecutter-example) - Cookiecutter template for generating Behave BDD automation projects with Selenium, Allure, and configurable options.
 - [python-behave-examples](https://github.com/MathiasPaulenko/python-behave-examples) - Repository with practical examples of using the Behave library in Python.
 - [Python-Behave-sample-project](https://github.com/crki76/Python-Behave-sample-project) - Sample BDD automation project with Page Object Model pattern.
 - [Python_Behave_Selenium_BDD](https://github.com/soumyaevan/Python_Behave_Selenium_BDD) - BDD test automation framework with Selenium and Behave.
