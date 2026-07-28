@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave)
-[![Resources](https://img.shields.io/badge/resources-68-blue)](https://github.com/MathiasPaulenko/awesome-behave)
+[![Resources](https://img.shields.io/badge/resources-75-blue)](https://github.com/MathiasPaulenko/awesome-behave)
 [![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave/graphs/contributors)
 [![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)](https://github.com/MathiasPaulenko/awesome-behave)
@@ -71,9 +71,11 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 - [behave-html-formatter](https://github.com/behave-contrib/behave-html-formatter) - Simple HTML formatter for Behave test reports.
 - [behave-html-pretty-formatter](https://github.com/behave-contrib/behave-html-pretty-formatter) - Pretty HTML formatter inspired by jest-html-reporter. Supports embedded screenshots, pseudo steps, and configurable summaries.
 - [behave-modern-console-report](https://github.com/MathiasPaulenko/behave-modern-console-report) - Real-time console report formatter with colors, progress indicators, and execution summaries for local development and CI/CD.
+- [behave-modern-file-reports](https://github.com/MathiasPaulenko/behave-modern-file-reports) - PDF, DOCX, and TXT report formatters for Behave. Customizable templates, executive summaries, embedded screenshots, and failed-only filters for stakeholders.
 - [behave-modern-html-report](https://github.com/MathiasPaulenko/behave-modern-html-report) - Modern interactive HTML report formatter with zero external dependencies.
 - [behave-modern-json-report](https://github.com/MathiasPaulenko/behave-modern-json-report) - Modern structured JSON report formatter with schema-versioned output and Cucumber JSON compatibility for CI/CD integrations.
 - [behave-modern-md-report](https://github.com/MathiasPaulenko/behave-modern-md-report) - Markdown report formatter that generates GitHub-friendly execution reports with summaries and statistics.
+- [behave-modern-sheets-report](https://github.com/MathiasPaulenko/behave-modern-sheets-report) - CSV and Excel (XLSX) report formatters for Behave. CSV with one row per scenario, Excel with multiple sheets (Summary, Details, Failures, Trends), conditional formatting, and auto-filters.
 - [behave-teamcity](https://github.com/iljabauer/behave-teamcity) - Formatter for reporting Behave test results to JetBrains TeamCity CI via service messages.
 
 ## Integrations
@@ -109,16 +111,23 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 
 ## Tooling
 
+- [behave-comments](https://github.com/MathiasPaulenko/behave-comments) - Parser and extractor for comments and annotations in Behave `.feature` files. Extract structured metadata from `# @id REQ-001` style annotations, convert comments to tags, and generate documentation.
+- [behave-data](https://github.com/MathiasPaulenko/behave-data) - Random test data utilities for Behave. Faker integration in steps, data providers, dynamic Examples generation, Data Tables with generated data, reproducible seeds, locale support, and reusable templates.
+- [behave-doctor](https://github.com/MathiasPaulenko/behave-doctor) - Static analysis and diagnostics for Behave suites. Detects unused steps/tags, duplicate steps, tag coverage, feature/scenario complexity, and dependency graphs. Zero dependencies.
 - [behave-format](https://github.com/MathiasPaulenko/behave-format) - Opinionated formatter for Behave `.feature` files. Like Black, but for Gherkin.
+- [behave-kit](https://github.com/MathiasPaulenko/behave-kit) - Swiss army knife for Behave. Soft assertions, context dump on failure, conditional skip decorators, environment management, typed context, parameter types, tag-based fixtures, scoped cleanup, and environment variable helpers. Zero dependencies.
 - [behave-lint](https://github.com/MathiasPaulenko/behave-lint) - Fast, opinionated, extensible linter for Gherkin `.feature` files and Behave test suites.
 - [behave-gen](https://github.com/MathiasPaulenko/behave-gen) - Scaffolding and code generation toolkit for Behave. Project init, step skeletons from .feature files, OpenAPI/Postman codegen, Cucumber migration. Zero dependencies.
 - [behave-steplib](https://github.com/MathiasPaulenko/behave-steplib) - Reusable step libraries for Behave. Share, discover and install step definitions across projects via entry points. Zero dependencies.
 - [behave-model](https://github.com/MathiasPaulenko/behave-model) - Canonical object model for Behave projects with Gherkin v6 Rules, Tag Expression v2, and full Behave 1.3.x compatibility.
+- [behave-priority](https://github.com/MathiasPaulenko/behave-priority) - Priority-based execution for Behave. Run critical scenarios first with `@priority(N)` tags, fail-fast controls, and smoke-first mode. Zero dependencies.
+- [behave-retry](https://github.com/MathiasPaulenko/behave-retry) - Automatic retry for failed Behave scenarios with CLI flags, tag overrides, exception filtering, and flakiness stats. Zero dependencies.
+- [behave-tables](https://github.com/MathiasPaulenko/behave-tables) - Polished API for Behave Data Tables with `as_dicts()`, `as_models()`, `transpose()`, `to_csv()`, and `to_json()`. Zero dependencies, type-safe.
 
 ## CI/CD Integrations
 
 - [Behave CI/CD Pipeline Guide](https://deepwiki.com/behave/behave/6.2-cicd-pipeline) - Comprehensive guide on integrating Behave into CI/CD pipelines (GitHub Actions, Tox, multi-environment testing).
-- [GitLab CI + Behave + Pytest](https://surestride.hashnode.dev/cicd-pipeline-for-python-with-bdd-and-tdd-using-behave-pytest-and-gitlab-ci) - Complete CI/CD pipeline tutorial using Behave, pytest, pre-commit hooks, and GitLab CI.
+- [GitLab CI + Behave + Pytest](https://surestride.hashnode.dev/cicd-pipeline-for-python-with-bdd-and-ttdd-using-behave-pytest-and-gitlab-ci) - Complete CI/CD pipeline tutorial using Behave, pytest, pre-commit hooks, and GitLab CI.
 - [JUnit XML Reporter](https://behave.readthedocs.io/en/stable/appendix.formatters/) - Built-in `junit` reporter for Jenkins and other CI systems that consume JUnit XML.
 - [ParallelBehaveAllureFlow](https://github.com/ggkiokas/ParallelBehaveAllureFlow) - Reusable GitHub Actions workflow for parallel Behave execution with Allure report generation and retry mechanism.
 - [Tox](https://tox.wiki) - Generic virtualenv management and test tool for running Behave across multiple Python environments in CI.
@@ -168,8 +177,8 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 - [appium-python-bdd](https://github.com/serhatbolsu/appium-python-bdd) - BDD test examples with Appium and Behave for mobile testing.
 - [Applitools-With-Behave](https://github.com/umangbhatia786/Applitools-With-Behave) - Sample framework integrating Selenium, Behave, and Applitools for visual testing.
 - [behave-gui](https://github.com/behave-contrib/behave-gui) - GUI front-end for Behave test execution.
-- [behavedemo](https://github.com/andrewdjackson/behavedemo) - Demo project using pyHamcrest matchers, Requests, and Selenium with Behave.
-- [cookiecutter-example](https://github.com/MathiasPaulenko/cookiecutter-example) - Cookiecutter template for generating Behave BDD test automation projects with Selenium, Allure, and configurable options.
+- [behavedemo](https://github.com/andrewdjackson/behavedemo) - Demo project using py Hamcrest matchers, Requests, and Selenim with Behave.
+- [cookiecutter-example](https://github.com/MathiasPaulenko/cookiecutter-example) - Cookiecutter template for generating Behave BDD automation projects with Selenium, Allure, and configurable options.
 - [python-behave-examples](https://github.com/MathiasPaulenko/python-behave-examples) - Repository with practical examples of using the Behave library in Python.
 - [Python-Behave-sample-project](https://github.com/crki76/Python-Behave-sample-project) - Sample BDD automation project with Page Object Model pattern.
 - [Python_Behave_Selenium_BDD](https://github.com/soumyaevan/Python_Behave_Selenium_BDD) - BDD test automation framework with Selenium and Behave.
