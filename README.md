@@ -1,17 +1,15 @@
-# Awesome Behave
+# Awesome Behave [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
-[![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave)
-[![Resources](https://img.shields.io/badge/resources-77-blue)](https://github.com/MathiasPaulenko/awesome-behave)
-[![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)](https://github.com/MathiasPaulenko/awesome-behave/graphs/contributors)
-[![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)](https://github.com/MathiasPaulenko/awesome-behave)
+![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)
+![Resources](https://img.shields.io/badge/resources-77-blue)
+![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)
+![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)
+![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)
 
-> A curated list of awesome resources, tools, libraries, and projects for
-> [Behave](https://github.com/behave/behave) — BDD, Python style.
+> A curated list of awesome resources, tools, libraries, and projects for Behave — BDD, Python style.
 
-[Behave](https://github.com/behave/behave) is behavior-driven development (BDD), Python style. It uses tests written in a natural language style (Gherkin), backed up by Python code.
+Behave is behavior-driven development (BDD), Python style. It uses tests written in a natural language style (Gherkin), backed up by Python code.
 
 ---
 
@@ -40,7 +38,6 @@
   - [Videos](#videos)
 - [Community Projects & Examples](#community-projects--examples)
 - [Related Awesome Lists](#related-awesome-lists)
-- [Contributing](#contributing)
 
 ---
 
@@ -52,7 +49,6 @@
 - [Behave Examples & Tutorials](https://behave.github.io/behave.example/) - Progressive tutorials from first steps to advanced features.
 - [Behave on PyPI](https://pypi.org/project/behave/) - Official PyPI package page.
 - [Behave Organization](https://github.com/behave) - GitHub organization hosting behave, behave-django, and behave.example.
-- [Formatters & Reporters Reference](https://behave.readthedocs.io/en/stable/appendix.formatters/) - Official documentation of built-in and contributed formatters.
 
 ## Formatters & Reporters
 
@@ -62,7 +58,7 @@ Behave ships with the following formatters: `json`, `json.pretty`, `plain`, `pre
 
 Built-in reporters: `junit` (JUnit XML output), `summary` (test run summary).
 
-See the [official formatter docs](https://behave.readthedocs.io/en/stable/appendix.formatters/) for full details.
+See the official formatter docs for full details.
 
 ### Contributed
 
@@ -87,7 +83,6 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 
 ### Browser Automation
 
-- [Playwright + Behave](https://qaskills.sh/blog/behave-python-bdd-complete-tutorial) - Growing pattern of wrapping Playwright Python in Behave step definitions for modern browser automation.
 - [Selenium + Behave](https://github.com/soumyaevan/Python_Behave_Selenium_BDD) - Common integration pattern using Selenium WebDriver with Behave step definitions.
 
 ### API Testing
@@ -128,7 +123,7 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 
 - [Behave CI/CD Pipeline Guide](https://deepwiki.com/behave/behave/6.2-cicd-pipeline) - Comprehensive guide on integrating Behave into CI/CD pipelines (GitHub Actions, Tox, multi-environment testing).
 - [GitLab CI + Behave + Pytest](https://surestride.hashnode.dev/cicd-pipeline-for-python-with-bdd-and-ttdd-using-behave-pytest-and-gitlab-ci) - Complete CI/CD pipeline tutorial using Behave, pytest, pre-commit hooks, and GitLab CI.
-- [JUnit XML Reporter](https://behave.readthedocs.io/en/stable/appendix.formatters/) - Built-in `junit` reporter for Jenkins and other CI systems that consume JUnit XML.
+- [JUnit XML Reporter](https://junit.org/junit4/) - Built-in `junit` reporter for Jenkins and other CI systems that consume JUnit XML.
 - [ParallelBehaveAllureFlow](https://github.com/ggkiokas/ParallelBehaveAllureFlow) - Reusable GitHub Actions workflow for parallel Behave execution with Allure report generation and retry mechanism.
 - [Tox](https://tox.wiki) - Generic virtualenv management and test tool for running Behave across multiple Python environments in CI.
 
@@ -153,7 +148,6 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 
 ### Tutorials & Guides
 
-- [Behave Examples & Tutorials](https://behave.github.io/behave.example/) - 12 progressive tutorials covering first steps, parameters, scenario outlines, tags, data types, and multi-language features.
 - [Behave Tutorial](https://behave.readthedocs.io/en/stable/tutorial/) - Official getting started guide covering feature files, step implementations, context, hooks, and tags.
 - [Complete Behave BDD Tutorial 2026](https://qaskills.sh/blog/behave-python-bdd-complete-tutorial) - Hands-on tutorial covering installation, project structure, hooks, fixtures, reporting, parallel execution, and Playwright integration.
 
@@ -165,8 +159,8 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 
 ### Books
 
-- *BDD in Action* by John Ferguson Smart - Covers BDD principles with examples across multiple languages including Python/Behave.
-- *The Cucumber Book* by Matt Wynne and Aslak Hellesøy - While focused on Cucumber/Ruby, the Gherkin and BDD principles apply directly to Behave.
+- [BDD in Action](https://www.manning.com/books/bdd-in-action) by John Ferguson Smart - Covers BDD principles with examples across multiple languages including Python/Behave.
+- [The Cucumber Book](https://pragprog.com/titles/hwcuc/) by Matt Wynne and Aslak Hellesøy - While focused on Cucumber/Ruby, the Gherkin and BDD principles apply directly to Behave.
 
 ### Videos
 
@@ -174,14 +168,10 @@ See the [official formatter docs](https://behave.readthedocs.io/en/stable/append
 
 ## Community Projects & Examples
 
-- [appium-python-bdd](https://github.com/serhatbolsu/appium-python-bdd) - BDD test examples with Appium and Behave for mobile testing.
-- [Applitools-With-Behave](https://github.com/umangbhatia786/Applitools-With-Behave) - Sample framework integrating Selenium, Behave, and Applitools for visual testing.
 - [behave-gui](https://github.com/behave-contrib/behave-gui) - GUI front-end for Behave test execution.
-- [behavedemo](https://github.com/andrewdjackson/behavedemo) - Demo project using py Hamcrest matchers, Requests, and Selenim with Behave.
 - [cookiecutter-example](https://github.com/MathiasPaulenko/cookiecutter-example) - Cookiecutter template for generating Behave BDD automation projects with Selenium, Allure, and configurable options.
 - [python-behave-examples](https://github.com/MathiasPaulenko/python-behave-examples) - Repository with practical examples of using the Behave library in Python.
 - [Python-Behave-sample-project](https://github.com/crki76/Python-Behave-sample-project) - Sample BDD automation project with Page Object Model pattern.
-- [Python_Behave_Selenium_BDD](https://github.com/soumyaevan/Python_Behave_Selenium_BDD) - BDD test automation framework with Selenium and Behave.
 - [Python_Selenium_BDD_Framework](https://github.com/DipankarDandapat/Python_Selenium_BDD_Framework) - Comprehensive framework with Selenium for UI, Requests for API, and BehaveX for parallel execution.
 - [try-behave](https://github.com/behave-contrib/try-behave) - Try Behave directly in the browser using Pyodide, no installation required.
 
