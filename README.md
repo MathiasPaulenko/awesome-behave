@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 ![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)
-![Resources](https://img.shields.io/badge/resources-77-blue)
+![Resources](https://img.shields.io/badge/resources-72-blue)
 ![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)
 ![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)
 ![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)
@@ -159,8 +159,8 @@ See the official formatter docs for full details.
 
 ### Books
 
-- [BDD in Action](https://www.manning.com/books/bdd-in-action) by John Ferguson Smart - Covers BDD principles with examples across multiple languages including Python/Behave.
-- [The Cucumber Book](https://pragprog.com/titles/hwcuc/) by Matt Wynne and Aslak Hellesøy - While focused on Cucumber/Ruby, the Gherkin and BDD principles apply directly to Behave.
+- [BDD in Action](https://www.manning.com/books/bdd-in-action) - BDD principles with examples across multiple languages including Python/Behave, by John Ferguson Smart.
+- [The Cucumber Book](https://pragprog.com/titles/hwcuc/) - Gherkin and BDD principles that apply directly to Behave, by Matt Wynne and Aslak Hellesøy.
 
 ### Videos
 

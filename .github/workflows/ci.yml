@@ -54,6 +54,7 @@ jobs:
             --exclude 'https://www.lambdatest.com/'
             --exclude 'https://www.udemy.com/'
             --exclude 'https://surestride.hashnode.dev/'
+            --exclude 'https://pragprog.com/'
             '*.md'
           fail: true
 
