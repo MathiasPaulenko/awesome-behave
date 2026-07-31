@@ -101,8 +101,8 @@ See the official formatter docs for full details.
 
 ## Parallel Execution
 
-- [behave-pool](https://github.com/MathiasPaulenko/behave-pool) - Native parallel execution for Behave with multiprocessing, work queue, result aggregation, `@serial` tag, and integration with behave-priority and behave-modern-* formatters. Zero dependencies.
 - [behave-parallel](https://github.com/hugeinc/behave-parallel) - Parallel execution support for Behave by feature or scenario using multiprocessing.
+- [behave-pool](https://github.com/MathiasPaulenko/behave-pool) - Native parallel execution for Behave with multiprocessing, work queue, result aggregation, `@serial` tag, and integration with behave-priority and behave-modern-* formatters. Zero dependencies.
 - [BehaveX](https://github.com/hrcorval/behavex) - Production-grade test orchestration wrapper for Behave with parallel execution, enterprise reporting, and scenario ordering support.
 
 ## Tooling
