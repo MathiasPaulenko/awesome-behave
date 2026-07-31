@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 ![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)
-![Resources](https://img.shields.io/badge/resources-72-blue)
+![Resources](https://img.shields.io/badge/resources-73-blue)
 ![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)
 ![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)
 ![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)
@@ -101,6 +101,7 @@ See the official formatter docs for full details.
 
 ## Parallel Execution
 
+- [behave-pool](https://github.com/MathiasPaulenko/behave-pool) - Native parallel execution for Behave with multiprocessing, work queue, result aggregation, `@serial` tag, and integration with behave-priority and behave-modern-* formatters. Zero dependencies.
 - [behave-parallel](https://github.com/hugeinc/behave-parallel) - Parallel execution support for Behave by feature or scenario using multiprocessing.
 - [BehaveX](https://github.com/hrcorval/behavex) - Production-grade test orchestration wrapper for Behave with parallel execution, enterprise reporting, and scenario ordering support.
 
