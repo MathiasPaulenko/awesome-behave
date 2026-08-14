@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 ![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)
-![Resources](https://img.shields.io/badge/resources-75-blue)
+![Resources](https://img.shields.io/badge/resources-76-blue)
 ![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)
 ![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)
 ![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)
@@ -153,6 +153,7 @@ See the official formatter docs for full details.
 
 - [Behave Tutorial](https://behave.readthedocs.io/en/stable/tutorial/) - Official getting started guide covering feature files, step implementations, context, hooks, and tags.
 - [Complete Behave BDD Tutorial 2026](https://qaskills.sh/blog/behave-python-bdd-complete-tutorial) - Hands-on tutorial covering installation, project structure, hooks, fixtures, reporting, parallel execution, and Playwright integration.
+- [Behave BDD Testing Guide](https://qapractices.com/topics/behave-bdd-testing/) - Practical guide to BDD testing with Behave covering setup, feature files, step definitions, hooks, tags, and best practices.
 
 ### Courses
 
