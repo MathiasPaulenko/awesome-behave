@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 ![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)
-![Resources](https://img.shields.io/badge/resources-74-blue)
+![Resources](https://img.shields.io/badge/resources-75-blue)
 ![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)
 ![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)
 ![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)
@@ -117,6 +117,7 @@ See the official formatter docs for full details.
 - [behave-model](https://github.com/MathiasPaulenko/behave-model) - Canonical object model for Behave projects with Gherkin v6 Rules, Tag Expression v2, and full Behave 1.3.x compatibility.
 - [behave-priority](https://github.com/MathiasPaulenko/behave-priority) - Priority-based execution for Behave. Run critical scenarios first with `@priority(N)` tags, fail-fast controls, and smoke-first mode. Zero dependencies.
 - [behave-retry](https://github.com/MathiasPaulenko/behave-retry) - Automatic retry for failed Behave scenarios with CLI flags, tag overrides, exception filtering, and flakiness stats. Zero dependencies.
+- [behave-runner](https://github.com/MathiasPaulenko/behave-runner) - Unified CLI entry point for the Behave ecosystem. Subcommands for run, list, select, watch, lint, format, report, trace, steps, impact, generate, init, and doctor. Integrates all BehaveLib plugins as optional extras with graceful degradation.
 - [behave-steplib](https://github.com/MathiasPaulenko/behave-steplib) - Reusable step libraries for Behave. Share, discover and install step definitions across projects via entry points. Zero dependencies.
 - [behave-tables](https://github.com/MathiasPaulenko/behave-tables) - Polished API for Behave Data Tables with `as_dicts()`, `as_models()`, `transpose()`, `to_csv()`, and `to_json()`. Zero dependencies, type-safe.
 - [behave-trace](https://github.com/MathiasPaulenko/behave-trace) - Trace viewer and step-by-step debugger for Behave. Captures steps, screenshots, DOM snapshots, and logs. Visualizes them in a Playwright-inspired web viewer with timeline, filmstrip, per-step detail tabs, before/after DOM diff, and live progress updates. Zero runtime dependencies.
