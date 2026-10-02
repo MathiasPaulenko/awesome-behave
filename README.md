@@ -67,7 +67,7 @@ See the official formatter docs for full details.
 - [behave-html-formatter](https://github.com/behave-contrib/behave-html-formatter) - Simple HTML formatter for Behave test reports.
 - [behave-html-pretty-formatter](https://github.com/behave-contrib/behave-html-pretty-formatter) - Pretty HTML formatter inspired by jest-html-reporter. Supports embedded screenshots, pseudo steps, and configurable summaries.
 - [behave-modern-console-report](https://github.com/MathiasPaulenko/behave-modern-console-report) - Real-time console report formatter with colors, progress indicators, and execution summaries for local development and CI/CD.
-- [behave-modern-file-reports](https://github.com/MathiasPaulenko/behave-modern-file-reports) - PDF, DOCX, and TXT report formatters for Behave. Customizable templates, executive summaries, embedded screenshots, and failed-only filters for stakeholders.
+- [behave-modern-file-reports](https://github.com/MathiasPaulenko/behave-modern-file-report) - PDF, DOCX, and TXT report formatters for Behave. Customizable templates, executive summaries, embedded screenshots, and failed-only filters for stakeholders.
 - [behave-modern-html-report](https://github.com/MathiasPaulenko/behave-modern-html-report) - Modern interactive HTML report formatter with zero external dependencies.
 - [behave-modern-json-report](https://github.com/MathiasPaulenko/behave-modern-json-report) - Modern structured JSON report formatter with schema-versioned output and Cucumber JSON compatibility for CI/CD integrations.
 - [behave-modern-md-report](https://github.com/MathiasPaulenko/behave-modern-md-report) - Markdown report formatter that generates GitHub-friendly execution reports with summaries and statistics.
@@ -151,9 +151,9 @@ See the official formatter docs for full details.
 
 ### Tutorials & Guides
 
+- [Behave BDD Testing Guide](https://qapractices.com/topics/behave-bdd-testing/) - Practical guide to BDD testing with Behave covering setup, feature files, step definitions, hooks, tags, and best practices.
 - [Behave Tutorial](https://behave.readthedocs.io/en/stable/tutorial/) - Official getting started guide covering feature files, step implementations, context, hooks, and tags.
 - [Complete Behave BDD Tutorial 2026](https://qaskills.sh/blog/behave-python-bdd-complete-tutorial) - Hands-on tutorial covering installation, project structure, hooks, fixtures, reporting, parallel execution, and Playwright integration.
-- [Behave BDD Testing Guide](https://qapractices.com/topics/behave-bdd-testing/) - Practical guide to BDD testing with Behave covering setup, feature files, step definitions, hooks, tags, and best practices.
 
 ### Courses
 
