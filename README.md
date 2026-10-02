@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 ![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)
-![Resources](https://img.shields.io/badge/resources-76-blue)
+![Resources](https://img.shields.io/badge/resources-83-blue)
 ![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)
 ![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)
 ![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)
@@ -73,6 +73,7 @@ See the official formatter docs for full details.
 - [behave-modern-md-report](https://github.com/MathiasPaulenko/behave-modern-md-report) - Markdown report formatter that generates GitHub-friendly execution reports with summaries and statistics.
 - [behave-modern-sheets-report](https://github.com/MathiasPaulenko/behave-modern-sheets-report) - CSV and Excel (XLSX) report formatters for Behave. CSV with one row per scenario, Excel with multiple sheets (Summary, Details, Failures, Trends), conditional formatting, and auto-filters.
 - [behave-teamcity](https://github.com/iljabauer/behave-teamcity) - Formatter for reporting Behave test results to JetBrains TeamCity CI via service messages.
+- [ReportPortal Behave Agent](https://github.com/reportportal/agent-python-behave) - Official ReportPortal integration for Behave with step and scenario-level reporting to a central test dashboard.
 
 ## Integrations
 
@@ -83,6 +84,7 @@ See the official formatter docs for full details.
 
 ### Browser Automation
 
+- [behave-webdriver](https://github.com/spyoungtech/behave-webdriver) - Selenium WebDriver step library providing pre-built steps for common browser interactions.
 - [Selenium + Behave](https://github.com/soumyaevan/Python_Behave_Selenium_BDD) - Common integration pattern using Selenium WebDriver with Behave step definitions.
 
 ### API Testing
@@ -115,12 +117,14 @@ See the official formatter docs for full details.
 - [behave-kit](https://github.com/MathiasPaulenko/behave-kit) - Swiss army knife for Behave. Soft assertions, context dump on failure, conditional skip decorators, environment management, typed context, parameter types, tag-based fixtures, scoped cleanup, and environment variable helpers. Zero dependencies.
 - [behave-lint](https://github.com/MathiasPaulenko/behave-lint) - Fast, opinionated, extensible linter for Gherkin `.feature` files and Behave test suites.
 - [behave-model](https://github.com/MathiasPaulenko/behave-model) - Canonical object model for Behave projects with Gherkin v6 Rules, Tag Expression v2, and full Behave 1.3.x compatibility.
+- [behave-pandas](https://github.com/clembou/behave-pandas) - Utilities to convert Behave Data Tables and Gherkin data into pandas DataFrames for data-driven testing.
 - [behave-priority](https://github.com/MathiasPaulenko/behave-priority) - Priority-based execution for Behave. Run critical scenarios first with `@priority(N)` tags, fail-fast controls, and smoke-first mode. Zero dependencies.
 - [behave-retry](https://github.com/MathiasPaulenko/behave-retry) - Automatic retry for failed Behave scenarios with CLI flags, tag overrides, exception filtering, and flakiness stats. Zero dependencies.
 - [behave-runner](https://github.com/MathiasPaulenko/behave-runner) - Unified CLI entry point for the Behave ecosystem. Subcommands for run, list, select, watch, lint, format, report, trace, steps, impact, generate, init, and doctor. Integrates all BehaveLib plugins as optional extras with graceful degradation.
 - [behave-steplib](https://github.com/MathiasPaulenko/behave-steplib) - Reusable step libraries for Behave. Share, discover and install step definitions across projects via entry points. Zero dependencies.
 - [behave-tables](https://github.com/MathiasPaulenko/behave-tables) - Polished API for Behave Data Tables with `as_dicts()`, `as_models()`, `transpose()`, `to_csv()`, and `to_json()`. Zero dependencies, type-safe.
 - [behave-trace](https://github.com/MathiasPaulenko/behave-trace) - Trace viewer and step-by-step debugger for Behave. Captures steps, screenshots, DOM snapshots, and logs. Visualizes them in a Playwright-inspired web viewer with timeline, filmstrip, per-step detail tabs, before/after DOM diff, and live progress updates. Zero runtime dependencies.
+- [behave2cucumber](https://github.com/behalf-oss/behave2cucumber) - Converts Behave JSON reports to Cucumber JSON format for compatibility with Cucumber-based reporting tools.
 
 ## CI/CD Integrations
 
@@ -134,6 +138,7 @@ See the official formatter docs for full details.
 
 ### IDE Plugins
 
+- [Behave VSC (VS Code)](https://github.com/jimasp/behave-vsc) - VS Code extension with test runner, debugger, and step navigation for Behave.
 - [Cucumber Official (VS Code)](https://marketplace.visualstudio.com/items?itemName=CucumberOpen.cucumber-official) - Official VS Code extension for Cucumber with Gherkin and Behave support.
 - [Cucumber-Eclipse](https://cucumber.github.io/cucumber-eclipse/) - Eclipse plugin with Gherkin editor support.
 - [cuke4vs](https://github.com/henritersteeg/cuke4vs) - Visual Studio plugin with Gherkin editor support.
@@ -142,6 +147,7 @@ See the official formatter docs for full details.
 ### Editor Plugins
 
 - [Behave Step Finder (Sublime Text)](https://packagecontrol.io/packages/Behave%20Step%20Finder) - Navigate to step definitions in Behave projects.
+- [behave-lsp.nvim (Neovim)](https://github.com/HosseyNJF/behave-lsp.nvim) - Language server for Behave feature files with step navigation and completion in Neovim.
 - [Cucumber (Sublime Text)](https://packagecontrol.io/packages/Cucumber) - Gherkin editor support with table formatting.
 - [Gherkin Editor](https://www.gherkineditor.com/) - Online editor for writing `.feature` files.
 - [NP++ Gherkin (Notepad++)](https://productive.me/develop/cucumbergherkin-syntax-highlighting-for-notepad) - Gherkin syntax highlighting for Notepad++.
@@ -174,6 +180,7 @@ See the official formatter docs for full details.
 
 - [behave-gui](https://github.com/behave-contrib/behave-gui) - GUI front-end for Behave test execution.
 - [cookiecutter-example](https://github.com/MathiasPaulenko/cookiecutter-example) - Cookiecutter template for generating Behave BDD automation projects with Selenium, Allure, and configurable options.
+- [cucu](https://github.com/dominodatalab/cucu) - BDD web testing framework built on top of Behave with batteries-included steps for local and CI runs.
 - [python-behave-examples](https://github.com/MathiasPaulenko/python-behave-examples) - Repository with practical examples of using the Behave library in Python.
 - [Python-Behave-sample-project](https://github.com/crki76/Python-Behave-sample-project) - Sample BDD automation project with Page Object Model pattern.
 - [Python_Selenium_BDD_Framework](https://github.com/DipankarDandapat/Python_Selenium_BDD_Framework) - Comprehensive framework with Selenium for UI, Requests for API, and BehaveX for parallel execution.
