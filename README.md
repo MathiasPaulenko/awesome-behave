@@ -84,7 +84,9 @@ See the official formatter docs for full details.
 
 ### Browser Automation
 
+- [behave-playwright](https://github.com/MathiasPaulenko/behave-playwright) - Playwright-powered step library and lifecycle hooks for Behave. Navigation, interaction and assertion steps, browser/context/page management per scenario, auto-wait, screenshots on failure, network interception, device emulation, and tracing.
 - [behave-webdriver](https://github.com/spyoungtech/behave-webdriver) - Selenium WebDriver step library providing pre-built steps for common browser interactions.
+- [behave-playwright](https://github.com/MathiasPaulenko/behave-playwright) - Reusable step definitions and lifecycle hooks to use Playwright as the browser driver in Behave. Navigation, interaction, assertion and wait steps plus Playwright-exclusive features (network interception, device emulation, tracing).
 - [Selenium + Behave](https://github.com/soumyaevan/Python_Behave_Selenium_BDD) - Common integration pattern using Selenium WebDriver with Behave step definitions.
 
 ### API Testing
