@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml/badge.svg)](https://github.com/MathiasPaulenko/awesome-behave/actions/workflows/ci.yml)
 ![Last Commit](https://img.shields.io/github/last-commit/MathiasPaulenko/awesome-behave)
-![Resources](https://img.shields.io/badge/resources-83-blue)
+![Resources](https://img.shields.io/badge/resources-84-blue)
 ![Contributors](https://img.shields.io/github/contributors/MathiasPaulenko/awesome-behave)
 ![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-green)
 ![Stars](https://img.shields.io/github/stars/MathiasPaulenko/awesome-behave?style=social)
