@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 ENTRY_PATTERN = re.compile(
-    r"^- \[.+?\]\(.+?\) - .+\.$"
+    r"^- \[.+?\]\(.+?\) - .+\.(?:\s+\((?:archived|unmaintained)\))?$"
 )
 BULLET_PATTERN = re.compile(r"^- ")
 
@@ -48,9 +48,10 @@ def validate_readme(path: Path) -> list[str]:
                     f"Line {lineno} ({current_section}): entry does not match format "
                     f"'- [Name](URL) - Description.':\n  {stripped}"
                 )
-        elif stripped.startswith("- ["):
+        else:
             errors.append(
-                f"Line {lineno} ({current_section}): malformed entry:\n  {stripped}"
+                f"Line {lineno} ({current_section}): malformed entry "
+                f"(must be a link):\n  {stripped}"
             )
 
     return errors
