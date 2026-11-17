@@ -16,7 +16,8 @@ from pathlib import Path
 from datetime import datetime
 
 ENTRY_PATTERN = re.compile(r"^- \[(.+?)\]\((.+?)\) - (.+)$")
-SECTION_PATTERN = re.compile(r"^(#{2,3})\s+(.+)$")
+SECTION_PATTERN = re.compile(r"^##\s+(.+)$")
+SUBSECTION_PATTERN = re.compile(r"^###\s+(.+)$")
 BOLD_TEXT_PATTERN = re.compile(r"\*(.+?)\*")
 
 TEMPLATE = """<!DOCTYPE html>
@@ -120,6 +121,7 @@ body {{
   cursor: pointer;
   font-size: 1.2rem;
   z-index: 100;
+  color: var(--text);
 }}
 .section {{ margin-bottom: 40px; }}
 .section h2 {{
@@ -172,7 +174,7 @@ body {{
 </style>
 </head>
 <body>
-<div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+<button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button>
 <div class="layout">
   <aside class="sidebar">
     <h2>📂 Sections</h2>
@@ -191,7 +193,7 @@ body {{
       <p>A curated list of awesome resources, tools, libraries, and projects for <a href="https://github.com/behave/behave">Behave</a> — BDD, Python style.</p>
     </div>
     <div class="search-bar">
-      <input type="text" id="search" placeholder="Search resources..." oninput="filterEntries()">
+      <input type="text" id="search" placeholder="Search resources..." aria-label="Search resources" oninput="filterEntries()">
     </div>
     <div class="no-results" id="noResults">No resources found matching your search.</div>
 {sections}
@@ -252,13 +254,14 @@ def slugify(text: str) -> str:
     return text
 
 
-def parse_readme(path: Path) -> tuple[list[tuple[str, str, int]], list[tuple[str, str, list[tuple[str, str, str]]]]]:
+def parse_readme(
+    path: Path,
+) -> tuple[list[tuple[str, str, int]], list[tuple[str, list[tuple[str, ...]]]]]:
     """Parse README.md into sections and entries."""
-    nav_items = []
-    sections = []
-    current_section = None
-    current_subsection = None
-    current_entries = []
+    nav_items: list[tuple[str, str, int]] = []
+    sections: list[tuple[str, list[tuple[str, ...]]]] = []
+    current_section: str | None = None
+    current_entries: list[tuple[str, ...]] = []
 
     for line in path.read_text(encoding="utf-8").splitlines():
         stripped = line.strip()
@@ -266,19 +269,16 @@ def parse_readme(path: Path) -> tuple[list[tuple[str, str, int]], list[tuple[str
         section_match = SECTION_PATTERN.match(stripped)
         if section_match:
             if current_section:
-                if current_subsection:
-                    current_entries.append(("subsection_end", current_subsection, ""))
                 sections.append((current_section, current_entries))
 
-            level = len(section_match.group(1))
-            title = section_match.group(2).strip()
+            title = section_match.group(1).strip()
 
             if title == "Contents":
                 current_section = None
+                current_entries = []
                 continue
 
             current_section = title
-            current_subsection = None
             current_entries = []
             continue
 
@@ -289,16 +289,12 @@ def parse_readme(path: Path) -> tuple[list[tuple[str, str, int]], list[tuple[str
             current_entries.append(("entry", html.escape(name), html.escape(url), desc))
             continue
 
-        if stripped.startswith("### ") and current_section:
-            if current_subsection:
-                current_entries.append(("subsection_end", current_subsection, ""))
-            sub = stripped.lstrip("# ").strip()
-            current_subsection = sub
-            current_entries.append(("subsection_start", sub, slugify(sub)))
+        subsection_match = SUBSECTION_PATTERN.match(stripped)
+        if subsection_match and current_section:
+            sub = subsection_match.group(1).strip()
+            current_entries.append(("subsection", sub, slugify(sub)))
 
     if current_section:
-        if current_subsection:
-            current_entries.append(("subsection_end", current_subsection, ""))
         sections.append((current_section, current_entries))
 
     for title, entries in sections:
@@ -309,6 +305,15 @@ def parse_readme(path: Path) -> tuple[list[tuple[str, str, int]], list[tuple[str
     return nav_items, sections
 
 
+def _subsection_has_entries(entries: list[tuple[str, ...]], index: int) -> bool:
+    for entry in entries[index + 1:]:
+        if entry[0] == "subsection":
+            return False
+        if entry[0] == "entry":
+            return True
+    return False
+
+
 def generate_site(readme_path: Path) -> str:
     nav_items, sections = parse_readme(readme_path)
 
@@ -317,7 +322,6 @@ def generate_site(readme_path: Path) -> str:
     nav_links = []
     for title, slug, count in nav_items:
         nav_links.append(f'      <a href="#{slug}">{html.escape(title)} <span class="count">{count}</span></a>')
-    nav_html = "\n".join(nav_links)
 
     sections_html = []
     for title, entries in sections:
@@ -329,11 +333,10 @@ def generate_site(readme_path: Path) -> str:
         sections_html.append(f'    <div class="section" id="{slug}">')
         sections_html.append(f'      <h2>{html.escape(title)}</h2>')
 
-        for entry in entries:
-            if entry[0] == "subsection_start":
-                sections_html.append(f'      <h3 id="{entry[2]}">{html.escape(entry[1])}</h3>')
-            elif entry[0] == "subsection_end":
-                continue
+        for i, entry in enumerate(entries):
+            if entry[0] == "subsection":
+                if _subsection_has_entries(entries, i):
+                    sections_html.append(f'      <h3 id="{slug}-{entry[2]}">{html.escape(entry[1])}</h3>')
             elif entry[0] == "entry":
                 _, name, url, desc = entry
                 sections_html.append(
