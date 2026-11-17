@@ -10,6 +10,7 @@ Exit code 0 always (issues are reported, not fatal).
 """
 
 import re
+import os
 import sys
 import json
 import urllib.request
@@ -25,7 +26,7 @@ def extract_urls(path: Path) -> list[tuple[int, str, str]]:
     urls = []
     for lineno, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
         for match in GITHUB_REPO_PATTERN.finditer(line):
-            repo = match.group(1).rstrip("/")
+            repo = match.group(1).rstrip("/.,;:")
             urls.append((lineno, f"https://github.com/{repo}", "github"))
         for match in PYPI_PATTERN.finditer(line):
             pkg = match.group(1).rstrip("/")
@@ -36,10 +37,14 @@ def extract_urls(path: Path) -> list[tuple[int, str, str]]:
 def check_github_repo(repo: str) -> tuple[bool, str]:
     """Check if a GitHub repo is archived or inaccessible via API."""
     api_url = f"https://api.github.com/repos/{repo}"
-    req = urllib.request.Request(api_url, headers={
+    headers = {
         "Accept": "application/vnd.github.v3+json",
         "User-Agent": "awesome-behave-health-check",
-    })
+    }
+    token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    req = urllib.request.Request(api_url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.loads(resp.read())
@@ -49,7 +54,7 @@ def check_github_repo(repo: str) -> tuple[bool, str]:
     except urllib.error.HTTPError as e:
         if e.code == 404:
             return False, "Repository not found (404)"
-        if e.code == 403:
+        if e.code in (403, 429):
             return True, "Rate limited (skipping)"
         return False, f"HTTP {e.code}"
     except Exception as e:
@@ -63,7 +68,7 @@ def check_pypi_package(pkg: str) -> tuple[bool, str]:
         "User-Agent": "awesome-behave-health-check",
     })
     try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        with urllib.request.urlopen(req, timeout=15):
             return True, "OK"
     except urllib.error.HTTPError as e:
         if e.code == 404:
