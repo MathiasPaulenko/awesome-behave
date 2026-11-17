@@ -10,7 +10,7 @@ from generate_stats import generate_stats
 
 
 def main() -> int:
-    if len(sys.argv) < 2:
+    if len(sys.argv) != 2:
         print(f"Usage: python {sys.argv[0]} <README.md>")
         return 1
 
