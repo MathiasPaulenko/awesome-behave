@@ -8,8 +8,6 @@ on:
 
 permissions:
   contents: read
-  pull-requests: write
-  checks: write
 
 jobs:
   markdown-lint:
@@ -27,7 +25,7 @@ jobs:
         run: npm install -g markdownlint-cli
 
       - name: Lint markdown files
-        run: markdownlint '**/*.md' --config .markdownlint.json --ignore '.github/**/*.md' --ignore 'DESIGN.md'
+        run: markdownlint '**/*.md' --config .markdownlint.json --ignore '.github/**/*.md'
 
   link-check:
     name: Link Check
@@ -75,3 +73,6 @@ jobs:
 
       - name: Validate alphabetical order
         run: python scripts/check_alphabetical.py README.md
+
+      - name: Generate site (sanity check)
+        run: python scripts/generate_site.py README.md --output site/index.html
