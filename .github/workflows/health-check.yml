@@ -26,17 +26,37 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/check_repo_health.py README.md
 
-      - name: Create issue if problems found
+      - name: Create or update issue if problems found
         if: ${{ hashFiles('health-report.md') != '' }}
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
             const report = fs.readFileSync('health-report.md', 'utf8');
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: '[Auto] Resource health check report',
-              body: report,
-              labels: ['maintenance', 'auto-generated']
+            const { owner, repo } = context.repo;
+            const labels = ['maintenance', 'auto-generated'];
+            const title = '[Auto] Resource health check report';
+
+            const repoLabels = new Set(
+              (await github.paginate(github.rest.issues.listLabelsForRepo, {
+                owner, repo, per_page: 100,
+              })).map(l => l.name)
+            );
+            for (const name of labels) {
+              if (!repoLabels.has(name)) {
+                await github.rest.issues.createLabel({ owner, repo, name });
+              }
+            }
+
+            const openIssues = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: 'open', labels: 'auto-generated', per_page: 100,
             });
+            const existing = openIssues.find(i => i.title === title && !i.pull_request);
+
+            if (existing) {
+              await github.rest.issues.update({
+                owner, repo, issue_number: existing.number, body: report,
+              });
+            } else {
+              await github.rest.issues.create({ owner, repo, title, body: report, labels });
+            }
